@@ -57,6 +57,7 @@ fn epoch() -> String {
         .to_string();
 }
 
+//tests
 fn main() {
     let test_tx1 = Transaction {
         sender: "dsdsd".to_string(),
