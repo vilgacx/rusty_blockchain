@@ -3,4 +3,4 @@
 ```
 Simple PoW Blockchain impemented in rust.
 ```
-*underdevelopment*
+*(underdevelopment)*
