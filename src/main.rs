@@ -18,6 +18,15 @@ struct Transaction {
     amount: i32,
 }
 
+impl Blockchain {
+    fn getLastBock(&self) {
+        //return &self.chain[-1];
+    }
+
+    fn addBlock(&self) {
+    }
+}
+
 impl Block {
     fn calc_hash(&self) -> String {
         let mut hashtx: String = "".to_owned();
