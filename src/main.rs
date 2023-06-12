@@ -2,29 +2,23 @@ use sha256::digest;
 use std::time::{SystemTime, UNIX_EPOCH};
 
 struct Blockchain {
-    chain: Vec<String>,
+    chain: Vec<String>
 }
 
 struct Block {
     prev: String,
     hash: String,
     nonce: i32,
-    transactions: Vec<String>,
+    transactions: Vec<String>
 }
 
 struct Transaction {
     sender: String,
     reciever: String,
-    amount: i32,
+    amount: i32
 }
 
 impl Blockchain {
-    fn getLastBock(&self) {
-        //return &self.chain[-1];
-    }
-
-    fn addBlock(&self) {
-    }
 }
 
 impl Block {
@@ -32,7 +26,7 @@ impl Block {
         let mut hashtx: String = "".to_owned();
         for transaction in (&self.transactions).iter() {
             hashtx.push_str(&transaction.to_owned());
-        }
+        };
         let hashstr = format!(
             "{}{}{}{}{}",
             epoch(),
